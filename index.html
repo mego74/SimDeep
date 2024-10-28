@@ -12,25 +12,80 @@
             background-color: #f0f0f0;
         }
 
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 5px 0;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        .authors {
+            margin-top: 10px;
+        }
+
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
+            padding: 20px;
         }
 
         iframe {
             width: 80%;
-            height: 90vh;
+            height: 70vh;
             border: none;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             background-color: white;
+            margin-top: 20px;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>Welcome to the SimDeep Research Paper</h1>
+        <p>Submitted to: <strong>[Conference Name]</strong></p>
+    </header>
+
     <div class="container">
+        <p class="authors">
+            <strong>Authors:</strong> Ahmed Jaheen, Sarah Elsamanody, Hamada Rizk, Moustafa Youssef
+        </p>
+        <p><strong>Affiliations:</strong> The American University in Cairo, Egypt & Osaka University, Japan</p>
+
         <iframe src="SimDeep_Paper.pdf"></iframe>
+
+        <div class="links">
+            <p>Connect with the authors on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/ahmedjaheen" target="_blank">Ahmed Jaheen</a> |
+            <a href="https://www.linkedin.com/in/sarahelsamanody" target="_blank">Sarah Elsamanody</a> |
+            <a href="https://www.linkedin.com/in/hamadarizk" target="_blank">Hamada Rizk</a> |
+            <a href="https://www.linkedin.com/in/moustafayoussef" target="_blank">Moustafa Youssef</a>
+        </div>
     </div>
+
 </body>
 </html>
